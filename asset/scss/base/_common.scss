@@ -1,0 +1,32 @@
+body{
+    font-family: $font-en01 ;
+    background: #0E0E0E;
+    color: #222; 
+    position: relative;
+    line-height: 1;
+}
+
+.blind{
+    position: absolute;   
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+
+// @media screen and (min-width: 1200px){
+//     .inner {max-width: 80%;}
+// }  
+// @media screen and (min-width: 992px){
+//     .inner {max-width: 960px;}
+// }
+// @media (min-width: 768px){
+//     .inner{ max-width: 720px;}
+// }
+// @media (min-width: 576px){
+//     .inner{max-width: 540px;}
+// }
+
+
+

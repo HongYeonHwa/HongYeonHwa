@@ -1,0 +1,18 @@
+// .loading{
+//     position: fixed;
+//     top: 0;left: 0;
+//     right: 0;bottom: 0;
+//     background: #000;
+//     z-index: 120;
+//     img{
+//         position: absolute;
+//         top: 50%;left: 50%;
+//         transform: translate(-50%, -50%);
+//         width: 100px;
+//     }
+//     &.hide{
+//         visibility: hidden;
+//         opacity: 0;
+//         //display :none 은 아예 사라지기 때문에 후처리 모션이 안보임
+//     }
+// }

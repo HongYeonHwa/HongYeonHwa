@@ -1,0 +1,81 @@
+.footer_area{
+    position: relative;z-index: 60;
+    background: #0e0e0e;
+    color:#fff;
+    .group_contact{
+        display: flex;
+        @include mobile{
+            flex-direction: column;
+        }
+        a{
+            max-width: 50%; position: relative;
+            display: block;padding: 10vw 0;
+            flex: 0 0 50%;
+            text-align: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            &:first-child{border-right: 1px solid #333;}
+           .tit{
+            position: relative; 
+            display: inline-block;  
+            font-family: 'Sulphur Point', sans-serif ;
+            font-size: clamp(32px, 3.4vw, 80px);
+            line-height: 1.4;
+            padding: 0 0 1vw;
+            &::after{
+                content: '';
+               width: 20%;height: 2px;
+                position: absolute;
+                bottom: 0;left: 50%;transform: translateX(-50%);
+                background: #fff;
+            }
+           }
+        }
+
+    }
+    .group_info{
+        position: relative;overflow: hidden;
+        border-top: 1px solid #333;
+        padding: 5vw;
+        display: flex;
+        .addr_wrap{
+            flex: 0 0 50%;
+            padding: 0 15px;box-sizing: border-box;
+            display: flex;align-items: center;
+            .link_logo{
+                display:block;
+                width: 140px;height: 75px;margin-right: 20px;
+                background: url(/asset/img/logo.png) no-repeat center / 100%;
+            }
+            .addr{
+                a{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    font-family: 'Sulphur Point', sans-serif ;
+                    font-size: clamp(20px, 1.2vw, 28px);
+                    line-height: 1.5;
+                }
+            }
+        }
+        .sns_wrap{
+            flex: 0 0 50%;
+            padding: 0 15px;box-sizing: border-box;
+            overflow: hidden;
+            display: flex;justify-content: flex-end;
+            a{
+                display: block;
+                width:17.5px;height: 30px;
+                margin-right: 25px;
+                background:no-repeat center / 100%;
+                filter: invert(100%);
+                &.link_vimeo{background-image: url(/asset/img/ic_vimeo.png);}
+                &.link_youtube{background-image: url(/asset/img/ic_youtube.png);}
+                &.link_insta{background-image: url(/asset/img/ic_insta.png);}
+            }
+
+        }
+
+
+    }
+}
